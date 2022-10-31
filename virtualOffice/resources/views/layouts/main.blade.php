@@ -39,6 +39,10 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    @yield('container')
+                </div>
+
+                {{-- <div class="container-fluid">
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -365,20 +369,14 @@
                         </div>
                     </div>
 
-                </div>
+                </div> --}}
                 <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Kopti Salatiga 2022</span>
-                    </div>
-                </div>
-            </footer>
+            @include('partials.footer')
             <!-- End of Footer -->
 
         </div>
@@ -424,6 +422,10 @@
 
     <!-- Page level plugins -->
     <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/chart-area-demo.js"></script>
+    <script src="js/chart-pie-demo.js"></script>
 
 </body>
 
